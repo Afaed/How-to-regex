@@ -38,7 +38,7 @@ Generally, you want to start and end your
 Regex search with these.
 
 |Syntax   | Description |
-|:---          |--: |
+|:---          |:-- |
 | ^The | matches any string that starts with the word "The".  |    |
 |   |           |   |
 |   |   |   |
