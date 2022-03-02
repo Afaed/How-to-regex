@@ -37,9 +37,9 @@ Anchors are used to find a specific first word of a string, a specific last word
 Generally, you want to start and end your 
 Regex search with these.
 
-|Syntax   | Description|
-|:---          |:--: |
-| ^The : matches any string that starts with the |word "The".  |    |
+|Syntax   | Description |
+|:---          |--: |
+| ^The | matches any string that starts with the word "The".  |    |
 |   |           |   |
 |   |   |   |
 ^The : matches any string that starts with the word "The".
