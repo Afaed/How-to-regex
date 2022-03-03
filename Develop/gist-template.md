@@ -15,7 +15,9 @@ An application of Regex is used to verify a valid email addresses so you don't s
 - [Anchors](#anchors)
 - [Anchors Application](#anchors-application)
 - [Quantifiers](#quantifiers)
+- [Quantifiers Application](#quantifiers-application)
 - [OR Operator](#or-operator)
+[OR Operator Application](#or-operator-application)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
@@ -36,7 +38,7 @@ By the end of this guide you will be able to understand and use the HTML Tag reg
 
 ## Example
 
- /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+ ```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
 But before we can do this, we need to start with the basics!
 
@@ -68,24 +70,45 @@ In the Example, we have the ^ and the $ which will signify where the start and e
 |     apc?     | matches a string that has ap followed by zero or one C           |
 |     aed{2}     | this matches a string that has ae followed by 2 D           |
 | aed {2,}| this matches a string that has ae followed by 2 or more d|
-| |
+| | |
+
+# Quantifiers Application
+
 ### OR Operator
+
+# OR Operator Application
 
 ### Character Classes
 
+# Character Classes Application
+
 ### Flags
+
+# Flags Application
 
 ### Grouping and Capturing
 
+# Grouping and Capturing Application
+
 ### Bracket Expressions
+
+# Bracket Expressions Application
 
 ### Greedy and Lazy Match
 
+# Greedy and Lazy Match Application
+
 ### Boundaries
+
+# Boundary Application
 
 ### Back-references
 
+# Back-references Application
+
 ### Look-ahead and Look-behind
+
+# Look-ahead and Look-behind application
 
 ## Author
 Profile https://github.com/Afaed
