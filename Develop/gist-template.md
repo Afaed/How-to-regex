@@ -55,7 +55,7 @@ Regex search with these.
 
 # Anchors Application:
 
-/==^==<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
 In the Example, we have the ^ and the $ which will signify where the start and end of the string will go. 
 
