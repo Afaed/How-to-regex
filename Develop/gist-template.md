@@ -13,6 +13,7 @@ An application of Regex is used to verify a valid email addresses so you don't s
 ## Table of Contents
 
 - [Anchors](#anchors)
+- [Anchors Application](#anchors-application)
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
@@ -52,8 +53,9 @@ Regex search with these.
 |^The end$ | searches for and exact string match (starts and ends with The end). |
 |Hello | matches any string that has the text hello in it.|
 
-# Application:
+# Anchors Application:
 
+- [Example](#example)
 In the Example, we have the ^ and the $ which will signify where the start and end of the string will go. 
 
 
