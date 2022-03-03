@@ -31,6 +31,14 @@ Then from there it builds onto intermediate techniques to help you extract or ex
 
 Finally, we have advanced techniques that make it possible to search for entire words and character orders. These techniques are Boudnaries, Back-refrencs, and Look-ahead and Look-behind.
 
+By the end of this guide you will be able to understand and use the HTML Tag regex to search for an HTML code. As featured below:
+
+## Example
+
+ /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
+
+But before we can do this, we need to start with the basics!
+
 ### Anchors
 Anchors are used to find a specific first word of a string, a specific last word of the string, the specific beginning and end of the string match, and any charater string with a specific text.
 
@@ -39,17 +47,25 @@ Regex search with these.
 
 |Syntax   | Description |
 |:---          |:-- |
-| ^The | matches any string that starts with the word "The".  |    |
-|   |           |   |
-|   |   |   |
-^The : matches any string that starts with the word "The".
-end$ : matches a string that ends with "end".
-^The end$: searches for and exact string match (starts and ends with The end).
-Hello: matches any string that has the text roar in it.
+| ^The | matches any string that starts with the word "The". |
+|end$ | matches a string that ends with "end".|
+|^The end$ | searches for and exact string match (starts and ends with The end). |
+|Hello | matches any string that has the text hello in it.|
+
+# Application:
+
+In the Example, we have the ^ and the $ which will signify where the start and end of the string will go. 
+
 
 ### Quantifiers
-
-
+|Syntax   | Description |
+|:---          |:-- |
+|   fdc*       |This matches a string where fd is followed by 0 or more c            |
+|    cdc+    | matches a string that has cd followed bby zero or one more C           |
+|     apc?     | matches a string that has ap followed by zero or one C           |
+|     aed{2}     | this matches a string that has ae followed by 2 D           |
+| aed {2,}| this matches a string that has ae followed by 2 or more d|
+| |
 ### OR Operator
 
 ### Character Classes
