@@ -17,15 +17,23 @@ An application of Regex is used to verify a valid email addresses so you don't s
 - [Quantifiers](#quantifiers)
 - [Quantifiers Application](#quantifiers-application)
 - [OR Operator](#or-operator)
-[OR Operator Application](#or-operator-application)
+- [OR Operator Application](#or-operator-application)
 - [Character Classes](#character-classes)
+- [Chatacter Classes Application](#character-classes-application)
 - [Flags](#flags)
+- [Flags](#flags-application)
 - [Grouping and Capturing](#grouping-and-capturing)
+- [Grouping and Capturing Application](#grouping-and-capturing-application)
 - [Bracket Expressions](#bracket-expressions)
+- [Bracket Expressions Application](#back-references-application)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Greedy and Lazy Match Application](#greedy-and-lazy-match-application)
 - [Boundaries](#boundaries)
+- [Boundaries Application](#boundary-application)
 - [Back-references](#back-references)
+- [Back-references Application](#back-references-application)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Look-ahead and Look-behind Application](#look-ahead-and-look-behind-application)
 
 ## Regex Components
 At its core, Regex is made out of Anchors, Quantifiers, OR Operators, Character Classes, and Flags to identify characters. 
@@ -59,58 +67,157 @@ Regex search with these.
 
 ```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
-In the Example, we have the ^ and the $ which will signify where the start and end of the string will go. 
+In the Example, we have the `^` and the `$` which will signify where the start and end of the string will go. Did you see where the Text is? 
 
+If you don't don't fret! The text is the `\/` within the code. Text can be symbols like `\/` as long as they end with a symbol or text.
 
 ### Quantifiers
 |Syntax   | Description |
 |:---          |:-- |
-|   fdc*       |This matches a string where fd is followed by 0 or more c            |
-|    cdc+    | matches a string that has cd followed bby zero or one more C           |
-|     apc?     | matches a string that has ap followed by zero or one C           |
-|     aed{2}     | this matches a string that has ae followed by 2 D           |
-| aed {2,}| this matches a string that has ae followed by 2 or more d|
-| | |
+|   fdc*       |This matches a string where `fd` is followed by `0` or more `c`            |
+|    cdc+    | matches a string that has `cd` followed by `0` or one more `c`           |
+|     apc?     | matches a string that has `ap` followed by `0` or one `c`           |
+|     aed{2}     | this matches a string that has ae followed by `2 D`           |
+| aed {2,}| this matches a string that has ``ae`` followed by `2` or more `d`|
+| adf{2,5}| This matches a string that has ``ad`` followed by 2 up to 5 f|
+| a(bd)| This matches a string that has a followedd by zero or more copies of the sequence ```bd``` |
+| a(bc){2,5}| matches a string that has ```a``` followed by `2 up to 5` copies of the sequence ```bc```|
 
 # Quantifiers Application
 
-### OR Operator
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+In the example shown above, we have `[a-z]+` which tells the code to match a string that follows the character set a-z, giving back what is neccessary.
+
+You may ask yourself, "What is a character string?" Don't worry about that for now-that will be covered later.
+
+We also have a Quantifier with `*` in between `/^<([a-z]+)([^<]+)` and `(?:>(.*)<\/\1>|\s+\/>)$/`. What the quantifier here does that it matches any string of the first followed by the second
+
+### OR Operator
+Syntax   | Description |
+|:---          |:-- |
+| a(b|c) |    matches a string that has a followed by b or c (and captures b or c) |
+| | |
+| | |
+| | |
+| | |
+| | |
 # OR Operator Application
 
-### Character Classes
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+### Character Classes
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 # Character Classes Application
 
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
+
 ### Flags
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 
 # Flags Application
 
-### Grouping and Capturing
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+
+### Grouping and Capturing
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 # Grouping and Capturing Application
 
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
+
+
 ### Bracket Expressions
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+
 
 # Bracket Expressions Application
 
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
+
 ### Greedy and Lazy Match
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+
 
 # Greedy and Lazy Match Application
 
-### Boundaries
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+### Boundaries
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 # Boundary Application
 
-### Back-references
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+### Back-references
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 # Back-references Application
 
-### Look-ahead and Look-behind
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
 
+### Look-ahead and Look-behind
+Syntax   | Description |
+|:---          |:-- |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 # Look-ahead and Look-behind application
 
+```/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/```
+
 ## Author
-Profile https://github.com/Afaed
+Profile: https://github.com/Afaed
 
 Afaed (real Name Justin Choy) is a programmer (by accident!) based in California. His hobbies are playing games, reading books about politics, and dunking on internet libertarians. He studies programming to become a game dev and make the game of his dreams!
